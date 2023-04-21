@@ -1,0 +1,43 @@
+{
+  "name": "lanhu",
+  "version": "1.0.0",
+  "description": "Lanhu for Alfred",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "type": "module",
+  "author": {
+    "name": "youmeng",
+    "email": "youmeng0937@gmail.com"
+  },
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "prepare": "yarn build",
+    "postinstall": "alfy-init",
+    "preuninstall": "alfy-cleanup",
+    "dev": "tsc"
+  },
+  "keywords": [
+    "alfred",
+    "alfred-workflow",
+    "alfy",
+    "todoist"
+  ],
+  "dependencies": {
+    "alfy": "^1.1.0",
+    "axios": "^1.3.6",
+    "dayjs": "^1.11.7"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^1.3.3",
+    "@types/node": "^18.11.11",
+    "eslint": "^8.29.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prefer-arrow": "^1.2.3",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.9.3",
+    "typesync": "^0.9.2"
+  }
+}

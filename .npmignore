@@ -1,0 +1,4 @@
+prefs.plist
+*.log
+*.yml
+node_modules
